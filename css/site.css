@@ -515,6 +515,9 @@ html.no-scroll{overflow:hidden}
 .skip{position:absolute;left:16px;top:-80px;z-index:100;padding:14px 18px;background:#cda44c;color:#0d0c0a;font:700 14px/1 system-ui,sans-serif;text-decoration:none;transition:top .2s}
 .skip:focus{top:16px}
 
+/* il portale occupa tutta l'altezza dello schermo, anche sui monitor grandi */
+.portal__pin{height:100vh;height:100svh}
+
 .shot[hidden],.form__ok[hidden]{display:none}
 .lightbox img:not([src]){visibility:hidden}
 

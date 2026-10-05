@@ -71,7 +71,7 @@
   if (burger && menu) {
     burger.addEventListener('click', () => setMenu(!menuOpen));
     menu.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
-    window.matchMedia('(min-width: 1101px)').addEventListener('change', (e) => { if (e.matches) setMenu(false); });
+    window.matchMedia('(min-width: 1281px)').addEventListener('change', (e) => { if (e.matches) setMenu(false); });
   }
 
   /* ---------- hero della home: il drago segue il puntatore ---------- */

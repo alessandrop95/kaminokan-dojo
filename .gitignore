@@ -1,0 +1,5 @@
+# Sorgenti delle immagini (JPG/PNG): sul sito vanno solo i WebP in assets/img
+assets/img-src/
+
+Thumbs.db
+desktop.ini

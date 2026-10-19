@@ -557,6 +557,18 @@ html.no-scroll{overflow:hidden}
   .hero__in{padding-bottom:clamp(84px,min(12vw,14vh),128px)}
 }
 @media (max-width:860px){.hero__enso{opacity:.32}}
+/* telefono: la scritta in alto non passa sotto i kanji a destra e tutto il blocco, con «Scorri», sta nella prima schermata */
+@media (max-width:600px){
+  .hero{padding-top:106px}
+  .hero__in{padding-bottom:72px}
+  .hero__in .eyebrow{max-width:calc(100% - 64px);font-size:11px;letter-spacing:.16em;line-height:1.6}
+  .hero__in .eyebrow::before{width:22px}
+  .hero__title{margin-top:14px}
+  .hero__sub{margin-top:16px;font-size:17px;line-height:1.55}
+  .hero__cta{margin-top:24px;gap:10px 28px}
+  .hero__tate{top:104px;gap:9px;font-size:20px}
+  .hero__tate .hanko{width:32px;height:32px;font-size:19px}
+}
 .intro-seen .hero__enso{--T0:.2s}
 
 /* ensō del Bushido: si ridipinge a ogni virtù e fa da contatore */

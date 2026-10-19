@@ -559,7 +559,8 @@ html.no-scroll{overflow:hidden}
 @media (max-width:860px){.hero__enso{opacity:.32}}
 /* telefono: la scritta in alto non passa sotto i kanji a destra e tutto il blocco, con «Scorri», sta nella prima schermata */
 @media (max-width:600px){
-  .hero{padding-top:106px}
+  /* sui telefoni alti la sezione non occupa tutto lo schermo: il blocco sale e sotto si intravede la sezione successiva */
+  .hero{padding-top:106px;min-height:min(100vh,700px);min-height:min(100svh,700px)}
   .hero__in{padding-bottom:72px}
   .hero__in .eyebrow{max-width:calc(100% - 64px);font-size:11px;letter-spacing:.16em;line-height:1.6}
   .hero__in .eyebrow::before{width:22px}

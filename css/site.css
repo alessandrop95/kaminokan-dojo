@@ -183,6 +183,10 @@
 .stack--c > :is(.more,.btn,.ph-note,.chap){align-self:center}
 .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:24px}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:24px}
+/* staff: quattro colonne su schermi larghi, due sul tablet, una sul telefono */
+.grid4{display:grid;grid-template-columns:1fr;gap:24px}
+@media (min-width:640px){.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1200px){.grid4{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .rule{height:1px;background:var(--line)}
 .mt{margin-top:clamp(40px,5vw,72px)}
 @media (min-width:980px){
@@ -547,16 +551,16 @@ html.no-scroll{overflow:hidden}
 .no-motion .enso__blot{opacity:.9}
 
 /* ensō attorno al drago */
-.hero__enso{width:132%;margin:-66% 0 0 -66%;opacity:.8;rotate:none;--D:2.9s;--T0:1.9s}
+.enso.hero__enso{width:132%;margin:-66% 0 0 -66%;opacity:.8;rotate:none;--D:2.9s;--T0:1.9s}
 @media (min-width:861px){
   .hero{--edge:max(var(--pad),calc(50% - 680px + var(--pad)))}
   .hero__drago{right:calc(var(--edge) + 78px);width:min(38vw,540px);margin-top:calc(min(38vw,540px) * -.6115)}
-  .hero__enso{width:126%;margin:-63% 0 0 -63%}
+  .enso.hero__enso{width:126%;margin:-63% 0 0 -63%}
   /* sugli schermi bassi il titolo si riduce con l'altezza, così il blocco resta sotto la barra di navigazione */
   .hero__title{font-size:clamp(46px,min(7vw,11vh),102px)}
   .hero__in{padding-bottom:clamp(84px,min(12vw,14vh),128px)}
 }
-@media (max-width:860px){.hero__enso{opacity:.32}}
+@media (max-width:860px){.enso.hero__enso{opacity:.32}}
 /* telefono: la scritta in alto non passa sotto i kanji a destra e tutto il blocco, con «Scorri», sta nella prima schermata */
 @media (max-width:600px){
   /* sui telefoni alti la sezione non occupa tutto lo schermo: il blocco sale e sotto si intravede la sezione successiva */
